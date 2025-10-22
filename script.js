@@ -5,13 +5,6 @@ function toggleMenu() {
 
 	if (!menuLinks || !hamburgerIcon) return; // defensive: do nothing if elements missing
 
-	const isOpen = menuLinks.classList.toggle("open");
+	menuLinks.classList.toggle("open");
 	hamburgerIcon.classList.toggle("open");
-
-	// accessibility: update aria-hidden and focus
-	menuLinks.setAttribute('aria-hidden', !isOpen);
-	if (isOpen) {
-		const firstLink = menuLinks.querySelector('a');
-		if (firstLink) firstLink.focus();
-	}
 }
