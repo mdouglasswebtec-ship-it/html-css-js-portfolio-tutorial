@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
@@ -24,21 +26,20 @@
         <div class="hamburger-menu">
             <div class="hamburger-icon" 
             onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-        </div>
-        <div class="menu-links">
-            <ul class="menu-list">
-        <li><a href="#about" onclick="toggleMenu()" >About</a></li>
-                  <li><a href="#experience" 
-                    onclick="toggleMenu()" >Experience</a></li>
-                    <li><a href="#projects" 
-                        onclick="toggleMenu()" >Projects</a></li>
-                      <li><a href="#contact" 
-                        onclick="toggleMenu()" >Contact</a></li>    
-                      </ul>
-                     </div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links" aria-hidden="true">
+                <ul class="menu-list">
+                    <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
   <section id="profile">
@@ -55,7 +56,7 @@
     <p class="section__text__p2">Web Developer</p>
     <div class="btn-container">
         <button class="btn btn-color-2"
-    onclick="window.open ('./Assets/Mathews_Resume.pdf') ">
+    onclick="window.open ('./Assets/Mathews-Resume.pdf') ">
    Download CV
  </button>
   <button class="btn btn-color-1"
@@ -104,10 +105,10 @@
                     class="icon"
                     />
                     <h3>Education</h3>
-                    <p>High School Diploma</p>
+                    <p>Web application development Certificate of completion</p>
                 </div>
                 </div>
-                <div class="text-container"><p>Web developer with a degree and a year of experience in web development.</p>
+                <div class="text-container"><p>A passionate frontend developer with a year of experience building scalable applications. I specialize with leveraging technologies like node.js, html, and css to build robust and user friendly web solutions.</p>
                 </div>
             </div>
             </div>
@@ -122,130 +123,130 @@
 <section id="experience">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-        <div class="about-containers">
-           <div class="details-container">
-                <h2 class="experience-sub-title">Frontend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img
-                         src="./Assets//checkmark.png"
-                         alt="Experience icon"
-                         class="icon"
-                         />
-                         <div>
-                            <h3>HTML</h3>
-                            <p>Experienced</p>
-                         </div>
-                    </article>
-                    <article>
-                        <img
-                         src="./Assets/checkmark.png"
-                         alt="Experience icon"
-                         class="icon"
-                         />
-                         <div>
-                            <h3>CSS</h3>
-                            <p>Experienced</p>
-                         </div>
-                    </article>
-                    <article>
-                        <img
-                         src="./Assets/checkmark.png"
-                         alt="Experience icon"
-                         class="icon"
-                         />
-                         <div>
-                            <h3>SAS</h3>
-                            <p>Intermediate</p>
-                         </div>
-                    </article>
-                    <article>
-                        <img
-                         src="./Assets/checkmark.png"
-                         alt="Experience icon"
-                         class="icon"
-                         />
-                         <div>
-                            <h3>JavaScript</h3>
-                            <p>Basic</p>
-                         </div>
-                    </article>
-                    <article>
-                        <img
-                         src="./Assets/checkmark.png"
-                         alt="Experience icon"
-                         class="icon"
-                         />
-                         <div>
-                            <h3>TypeScript</h3>
-                            <p>Basic</p>
-                         </div>
-                    </article>
-                    <article>
-                        <img
-                         src="./Assets/checkmark.png"
-                         alt="Experience icon"
-                         class="icon"
-                         />
-                         <div>
-                            <h3>Material UI</h3>
-                            <p>Intermediate</p>
-                         </div>
-                    </article>
-                </div> 
-            </div>
-             <div class="details-container">
-                <h2 class="experience-sub-title">Frontend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img
-                         src="./Assets//checkmark.png"
-                         alt="Experience icon"
-                         class="icon"
-                         />
-                         <div>
-                            <h3>PostgreSQL</h3>
-                            <p>Basic</p>
-                         </div>
-                    </article>
-                    <article>
-                        <img
-                         src="./Assets/checkmark.png"
-                         alt="Experience icon"
-                         class="icon"
-                         />
-                         <div>
-                            <h3>Node JS</h3>
-                            <p>Intermediate</p>
-                         </div>
-                    </article>
-                    <article>
-                        <img
-                         src="./Assets/checkmark.png"
-                         alt="Experience icon"
-                         class="icon"
-                         />
-                         <div>
-                            <h3>Express JS</h3>
-                            <p>Intermediate</p>
-                         </div>
-                    </article>
-                    <article>
-                        <img
-                         src="./Assets/checkmark.png"
-                         alt="Experience icon"
-                         class="icon"
-                         />
-                         <div>
-                            <h3>Git</h3>
-                            <p>Intermediate</p>
-                         </div>
-                    </article>
-                </div> 
+        <div class="experience-details-container">
+            <div class="about-containers">
+               <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                             src="./Assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img
+                             src="./Assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img
+                             src="./Assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>SAS</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img
+                             src="./Assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img
+                             src="./Assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img
+                             src="./Assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                    </div> 
+                </div>
+                 <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                             src="./Assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img
+                             src="./Assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img
+                             src="./Assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img
+                             src="./Assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                    </div> 
+                </div>
             </div>
         </div>
-    </div>
     <img 
             src="./Assets/arrow (1).png" 
             alt="Arrow icon" 
@@ -253,7 +254,7 @@
             onclick="location.href='./#projects'"
             />
 </section>
-<section id="Projects">
+<section id="projects">
     <p class="section__text__p1">Browse my recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
@@ -268,14 +269,14 @@
             </div>
             <h2 class="experience-sub-title project-title">Project One</h2>
             <div class="btn-container">
-                <button
-                 class="btn btn-color-2 project-btn"
-                  onclick="location.href 'https://github.com/'">
+                                <button
+                                 class="btn btn-color-2 project-btn"
+                                    onclick="location.href='https://github.com/'">
                     Github
                 </button>
-                <button
+                                <button
  class="btn btn-color-2 project-btn"
-                  onclick="location.href 'https://github.com/'">
+                                    onclick="location.href='https://github.com/'">
                     Live Demo
                 </button>
             </div>
@@ -290,14 +291,14 @@
             </div>
             <h2 class="experience-sub-title project-title">Project Two</h2>
             <div class="btn-container">
-                <button
-                 class="btn btn-color-2 project-btn"
-                  onclick="location.href 'https://github.com/'">
+                                <button
+                                 class="btn btn-color-2 project-btn"
+                                    onclick="location.href='https://github.com/'">
                     Github
                 </button>
-                <button
+                                <button
  class="btn btn-color-2 project-btn"
-                  onclick="location.href 'https://github.com/'">
+                                    onclick="location.href='https://github.com/'">
                     Live Demo
                 </button>
             </div>
@@ -312,14 +313,14 @@
             </div>
             <h2 class="experience-sub-title project-title">Project Three</h2>
             <div class="btn-container">
-                <button
-                 class="btn btn-color-2 project-btn"
-                  onclick="location.href 'https://github.com/'">
+                                <button
+                                 class="btn btn-color-2 project-btn"
+                                    onclick="location.href='https://github.com/'">
                     Github
                 </button>
-                <button
+                                <button
  class="btn btn-color-2 project-btn"
-                  onclick="location.href 'https://github.com/'">
+                                    onclick="location.href='https://github.com/'">
                     Live Demo
                 </button>
             </div>
@@ -335,24 +336,16 @@
 <p class="section__text__p1">Get in Touch</p>
 <h1 class="title">Contact Me</h1>
 <div class="contact-info-upper-container">
-    <div class="contact-info-container">
-        <img src="./Assets/email (1).png"
-        alt="Email icon" 
-        class="icon-contact-icon email-icon"
-        />
-        
-        <p><a href="mailito-examplemail@gmail.com">mdouglasswebtec@gmail.com</a></p>
-    </div>
-</div>
-<div class="contact-info-upper-container">
-    <div class="contact-info-container">
-        <img 
-        src="./Assets/linkedin (2).png" 
-        alt="Linkedin icon" 
-        class="icon-contact-icon"
-        />
-        
-        <p><a href="https://www.linkedin.com">Linkedin</a></p>
+    <div class="contact-list">
+        <a class="contact-item" href="mailto:mdouglasswebtec@gmail.com">
+            <img src="./Assets/email (1).png" alt="Email icon" class="contact-icon" />
+            <span class="contact-label">mdouglasswebtec@gmail.com</span>
+        </a>
+
+        <a class="contact-item" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="./Assets/linkedin (2).png" alt="LinkedIn icon" class="contact-icon" />
+            <span class="contact-label">LinkedIn</span>
+        </a>
     </div>
 </div>
 </section>

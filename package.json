@@ -1,0 +1,11 @@
+{
+  "name": "html-css-js-portfolio-tutorial",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:smoke": "node tests/smoke-mailto.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.37.0"
+  }
+}
