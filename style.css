@@ -93,27 +93,32 @@ cursor: default;
 }
 
 .menu-links {
-   display: none;
-    position: absolute; 
-   top: 100%;
-   right: 0;
-   background-color: white;
-   width: fit-content;
-   max-height: 0;
-   overflow: hidden;
-   transition: all 0.3 ease-in-out;
-   opacity: 1;
-   visibility: visible;
+    display: none;
+     /* anchor the menu to the right side of the viewport near the profile section */
+    position: fixed;
+    top: 8vh; /* aligns with the profile area (adjustable) */
+    right: 2rem;
+    background-color: #ffffff;
+    width: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    z-index: 9999;
+    padding: 0.25rem 0;
 }
 
 .menu-links a {
     display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
+    padding: 0.5rem 1.25rem;
+    text-align: left;
+    font-size: 1.25rem;
     color: black;
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .menu-links li {
@@ -122,8 +127,16 @@ cursor: default;
 
 .menu-links.open {
     display: flex;
-    max-height: 300px;
+    flex-direction: column;
+    max-height: 400px;
     opacity: 1;
+    visibility: visible;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .hamburger-icon.open span:first-child {
@@ -272,6 +285,31 @@ text-align: center;
     margin-top: 2rem;
 }
 
+/* Center the experience boxes specifically when inside #experience */
+#experience .about-containers {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+#experience .details-container {
+    max-width: 28rem;
+    flex: 0 1 28rem;
+}
+
+@media (max-width: 900px) {
+    #experience .about-containers {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #experience .details-container {
+        max-width: none;
+        width: 100%;
+    }
+}
+
 .about-details-container {
     justify-content: center;
     flex-direction: column;
@@ -392,6 +430,37 @@ article .icon {
     border-color: rgb(163,163,163);
 }
 
+/* Projects grid: three columns on desktop, responsive stack on small screens */
+.about-containers { /* reuse the existing container class used in projects */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.details-container.color-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.article-container { /* ensure project images scale inside their card */
+    display: block;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .about-containers {
+        grid-template-columns: 1fr;
+    }
+    #projects { padding-bottom: 4rem; }
+}
+
 /* CONTACT */
 
 #contact {
@@ -441,4 +510,16 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+/* Responsive: show hamburger on small screens */
+@media (max-width: 900px) {
+    #desktop-nav { display: none; }
+    #hamburger-nav { display: flex; align-items: center; justify-content: space-between; padding: 0 1rem; }
+    section { margin: 0 1.5rem; }
+    /* move the fixed menu down slightly on small screens */
+    .menu-links { top: 12vh; right: 1rem; }
+    #profile { flex-direction: column; gap: 1rem; align-items: center; }
+    .section__pic-container { margin: 0; }
+    .section__text { text-align: center; }
 }
