@@ -321,7 +321,7 @@
         class="icon-contact-icon email-icon"
         />
         
-    <p><a href="mailto:mdouglasswebtec@gmail.com">mdouglasswebtec@gmail.com</a></p>
+    <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
     </div>
 </div>
 <div class="contact-info-upper-container">
@@ -335,6 +335,31 @@
         <p><a href="https://www.linkedin.com">Linkedin</a></p>
     </div>
 </div>
+<div class="contact-form-wrapper">
+    <form id="contact-form" class="contact-form" novalidate>
+      <fieldset style="border:0;padding:0;margin:0;">
+        <legend class="sr-only">Contact form</legend>
+
+        <label for="cf-name">Name <span aria-hidden="true">*</span></label>
+        <input id="cf-name" name="name" type="text" required autocomplete="name" placeholder="Your full name" />
+
+        <label for="cf-email">Email <span aria-hidden="true">*</span></label>
+        <input id="cf-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
+
+        <label for="cf-subject">Subject</label>
+        <input id="cf-subject" name="subject" type="text" placeholder="Subject (optional)" />
+
+        <label for="cf-message">Message <span aria-hidden="true">*</span></label>
+        <textarea id="cf-message" name="message" rows="6" required placeholder="Write your message..."></textarea>
+
+        <div class="btn-container" style="justify-content:center;margin-top:1rem;">
+          <button type="submit" class="btn btn-color-1">Send Message</button>
+        </div>
+
+        <p class="form-status" aria-live="polite" style="text-align:center;margin-top:.75rem;"></p>
+      </fieldset>
+    </form>
+  </div>
 </section>
 <footer>
     <nav>
