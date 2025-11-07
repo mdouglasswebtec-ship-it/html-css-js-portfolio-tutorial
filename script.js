@@ -32,3 +32,38 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 });
+// ...existing code...
+function handleSubmit(event) {
+    event.preventDefault();
+    
+    // Get form elements
+    const form = event.target;
+    const status = form.querySelector('.form-status');
+    const name = form.querySelector('#cf-name').value.trim();
+    const email = form.querySelector('#cf-email').value.trim();
+    const subject = form.querySelector('#cf-subject').value.trim() || 'Contact Form Message';
+    const message = form.querySelector('#cf-message').value.trim();
+
+    // Validate required fields
+    if (!name || !email || !message) {
+        status.textContent = 'Please fill in all required fields.';
+        status.style.color = '#d23f31';
+        return false;
+    }
+
+    // Construct mailto URL
+    const mailtoUrl = `mailto:mdouglasswebtec@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+
+    // Update status and open mail client
+    status.textContent = 'Opening mail client...';
+    status.style.color = '#2d6a4f';
+    window.location.href = mailtoUrl;
+
+    // Reset form after small delay
+    setTimeout(() => {
+        form.reset();
+        status.textContent = '';
+    }, 2000);
+
+    return false;
+}
